@@ -143,4 +143,57 @@
       }
     }
   }
+
+  .custom-destination {
+    width: 100%;
+    border-top: 2px dashed @navigation-border;
+    margin: 30px 0;
+
+    .content-custom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h4 {
+        margin: 30px 0;
+
+        @media @tablet {
+          width: 75%;
+          text-align: center;
+        }
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media @tablet {
+          width: 75%;
+        }
+
+        label {
+          font-size: 1.5rem;
+        }
+
+        input {
+          height: 4vh;
+          margin-bottom: 15px;
+          padding: 12px 20px;
+        }
+      }
+
+      .btn {
+        .btnFormat();
+        width: 25%;
+        background-color: #21bf73;
+        margin-bottom: 30px;
+        
+        &:hover {
+          .hoverBoxShadow(tint(#21bf73, 15%));
+        }
+      }
+    }
+  }
 }// home
