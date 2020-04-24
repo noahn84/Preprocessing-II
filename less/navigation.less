@@ -1,1 +1,69 @@
 // Navigation Styles here
+header {
+  width: 100%;
+  border-bottom: 2px dashed @navigation-border;
+
+  .header-container {
+    margin: 20px 0;
+    .displayFlex(row, center, center);
+
+    @media @tablet {
+      .displayFlex(column, auto, center);
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    .header-content {
+      max-width: 800px;
+      width: 100%;
+      .displayFlex(row, auto, center);
+
+      @media @tablet {
+        .displayFlex(column, auto, auto);
+      }
+
+      .title-content {
+        width: 60%;
+        .displayFlex(row, auto, center);
+        white-space: nowrap;
+
+        @media @tablet {
+          .displayFlex(column, auto, center);
+        }
+      }
+
+      .nav-bar {
+        width: 40%;
+        .displayFlex(row, flex-end, center);
+
+        @media @tablet {
+          width: 100%;
+        }
+
+        nav {
+          width: 100%;
+          .displayFlex(row, space-evenly, center);
+          margin-top: 20px;
+          margin-bottom: 10px;
+
+          @media @tablet {
+            width: 98%;
+          }
+
+          a {
+            .aFormat();
+            font-size: 1.65rem;
+
+            @media @mobile {
+              font-size: 1.5rem;
+            }
+            
+            &:hover {
+              color: @navHoverColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
