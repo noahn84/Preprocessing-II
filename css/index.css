@@ -521,6 +521,7 @@ header .header-container .header-content .nav-bar nav a:hover {
   padding: 12px 20px;
   border: 2px solid #C0C0C0;
   border-radius: 12px;
+  outline: none;
 }
 .home .custom-destination .content-custom .btn {
   text-align: center;
